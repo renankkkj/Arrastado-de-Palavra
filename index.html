@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arraste as Palavras — Frases de Programação</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Arraste as Palavras</h1>
+    <p class="subtitle">Monte frases sobre programação arrastando as palavras na ordem correta.</p>
+
+    <section class="controls">
+      <button id="prev">Anterior</button>
+      <button id="next">Próxima</button>
+      <button id="reset">Reordenar</button>
+      <button id="check">Verificar</button>
+    </section>
+
+    <section class="game">
+      <div id="pool" class="pool" aria-label="Banco de palavras" role="list"></div>
+      <div id="dropzone" class="dropzone" aria-label="Monte a frase aqui" role="list"></div>
+    </section>
+
+    <div id="result" class="result" aria-live="polite"></div>
+
+    <footer>
+      <small>Frases com tema de programação. Projeto de exemplo hospedado no repositório.</small>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
